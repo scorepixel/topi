@@ -1,0 +1,55 @@
+@import "assets/styles/colors";
+.pagination {
+    * {
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
+    }
+    ul {
+        margin: 0;
+        li {
+            display: inline;
+            list-style: none;
+            a {
+                padding: 5px 10px;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+            &.active {
+                a {
+                    background-color: #fff;
+                    color: $color-blue;
+                    box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.03);
+                }
+            }
+            &.disabled {
+                a {
+                    color: #ddd;
+                    cursor: not-allowed;
+                }
+            }
+            &.previous,
+            &.next {
+                a {
+                    font-weight: 600;
+                }
+            }
+            &.previous {
+                a {
+                    margin-right: 10px;
+                }
+            }
+            &.next {
+                a {
+                    margin-left: 10px;
+                }
+            }
+            &:hover {
+                a {
+                    background-color: lighten($color-gray-medium, 25%);
+                    color: $color-blue;
+                }
+            }
+        }
+    }
+}

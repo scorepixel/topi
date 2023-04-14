@@ -1,0 +1,11 @@
+//import colors
+@import "assets/styles/colors";
+
+.search {
+    input {
+        border-radius: 10px;
+        border: 1px solid $color-gray-medium;
+        padding: 10px 20px;
+        min-width: 160px;
+    }
+}

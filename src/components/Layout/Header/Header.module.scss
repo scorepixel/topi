@@ -1,0 +1,26 @@
+.header {
+    background-color: #fff;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 20px;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.03);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left {
+        display: flex;
+        h3 {
+            margin-left: 20px;
+            border-left: 1px solid #dddd;
+            padding-left: 20px;
+        }
+    }
+    .right {
+        display: flex;
+        align-items: center;
+    }
+}

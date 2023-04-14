@@ -1,0 +1,31 @@
+@import "assets/styles/colors";
+
+.customerProfile {
+    display: flex;
+    justify-content: center;
+    .notFound {
+        text-align: center;
+        h2 {
+            text-transform: uppercase;
+        }
+    }
+    .backToCustomers {
+        text-align: center;
+        margin-top: 20px;
+        a {
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+            color: $color-gray-dark;
+        }
+    }
+    .box {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 400px;
+        .top {
+        }
+    }
+}

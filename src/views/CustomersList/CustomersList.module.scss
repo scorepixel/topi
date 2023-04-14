@@ -1,0 +1,15 @@
+@import "assets/styles/colors";
+
+.customerList {
+    .inside {
+        .list {
+            width: 100%;
+            display: inline-flex;
+            flex-wrap: wrap;
+            gap: 26px;
+        }
+        .noResults {
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+//import colors
+@import "assets/styles/colors";
+
+.exportButton {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    cursor: pointer;
+    &:hover {
+        color: $color-blue;
+    }
+    img {
+        height: 20px;
+        margin-right: 10px;
+    }
+}
