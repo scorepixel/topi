@@ -4,9 +4,14 @@
     .inside {
         .list {
             width: 100%;
-            display: inline-flex;
+            display: flex;
             flex-wrap: wrap;
-            gap: 26px;
+            gap: 20px;
+            justify-content: space-between;
+            :global(.Card_card__uJ2JO) {
+                width: calc(25% - 20px);
+                box-sizing: border-box;
+            }
         }
         .noResults {
             text-align: center;

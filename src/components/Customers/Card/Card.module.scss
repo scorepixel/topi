@@ -7,13 +7,10 @@
     box-shadow: 0 12px 14px 0 rgba(0, 0, 0, 0.03);
     transform: scale(1);
     text-decoration: none;
-    &:hover:not(.noScale) {
+    &:hover {
         transform: scale(1.05);
         transition: all 0.2s ease-in-out;
         cursor: pointer;
-    }
-    .noScale {
-        transform: scale(1);
     }
     .inside {
         h3 {
@@ -34,8 +31,4 @@
             }
         }
     }
-}
-
-a.card {
-    width: 19%;
 }

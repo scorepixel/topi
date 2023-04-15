@@ -25,7 +25,12 @@
         flex-direction: column;
         width: 100%;
         max-width: 400px;
-        .top {
+        :global(.Card_card__uJ2JO) {
+            transform: scale(1);
+            &:hover {
+                transition: all 0.2s ease-in-out;
+                cursor: unset;
+            }
         }
     }
 }

@@ -74,7 +74,6 @@ const CustomerList = () => {
             })
             .catch(error => console.log(error));
 
-        console.log(url);
 
     }, [search, pagination.page]);
 
@@ -100,7 +99,7 @@ const CustomerList = () => {
                 </div>}
 
                 {list && list.length > 0 &&
-                    <div className={styles.list} style={{ justifyContent: list.length < 4 ? 'center' : 'unset' }}>
+                    <div className={styles.list} style={{ justifyContent: list.length < 4 ? 'center' : 'space-between' }}>
                         {list.map((customer, index) => {
                             return <Card key={index} customer={customer} list />
                         })}

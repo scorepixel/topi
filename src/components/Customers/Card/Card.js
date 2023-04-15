@@ -11,8 +11,6 @@ const Card = ({ customer, list }) => {
 
     const { name, email, city, id, address } = customer;
 
-    console.log(countries[customer.country_code]);
-
     const CardContent = () => {
         return <div className={styles.inside}>
             <h3>{name}</h3>
@@ -32,9 +30,10 @@ const Card = ({ customer, list }) => {
     //Note: we can use classnames package to manage classes
     //https://www.npmjs.com/package/classnames
 
+
     return list ? <Link to={`/customers/${id}`} className={styles.card}>
         <CardContent />
-    </Link> : <div className={`${styles.card} ${styles.noScale}`}><CardContent /></div>;
+    </Link> : <div className={`${styles.card}`}><CardContent /></div>;
 }
 
 export default Card;
